@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise2</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&family=Syne+Mono&display=swap');
+
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        .container {
+            max-width: 1440px;
+            padding: 0px 100px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .logo img {
+                width: 25px;
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            h2 {
+                font-size: 30px;
+                display: none;
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 70px;
+            font-size: 15px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .quote {
+                display: none;
+            }
+        }
+
+        .quote {
+            padding: 15px 25px;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+
+        .font {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .book {
+            background: #191A23;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+        .right {
+            width: 40%;
+        }
+
+        .left {
+            width: 50%;
+        }
+
+        .companylogo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="top">
+
+            <div class="logo">
+                <img src="images/icon.png" alt="icon" width="100%">
+                <h2>Positivus</h2>
+            </div>
+
+            <div class="menu">
+                <div>About us</div>
+                <div>Services</div>
+                <div>Use Cases</div>
+                <div>Pricing</div>
+                <div>Blog</div>
+                <button class="quote"> Request a quote</button>
+            </div>
+
+        </div>
+
+        <div class="font">
+
+            <div class="left">
+
+                <h1>Navigating the<br>digital landscape<br>for success</h1>
+                <p>
+                    Our digital marketing agency helps businesses<br> grow and
+                    succeed online through a range of<br> services including SEO,
+                    PPC, social media marketing,<br> and content creation.
+                </p>
+                <button class="book">Book a consultation</button>
+
+            </div>
+
+            <div class="right">
+                <img src="images/illustration.png" alt="illustration" width="100%">
+            </div>
+
+        </div>
+
+        <div class="companylogo">
+            <div>
+                <img src="images/amazon.jpg" alt="amazon" width="100%">
+            </div>
+
+            <div>
+                <img src="images/dle.jpg" alt="dle" idth="100%">
+            </div>
+
+            <div>
+                <img src="images/hub.jpg" alt="hub" idth="100%">
+            </div>
+
+            <div>
+                <img src="images/notion.jpg" alt="notion" idth="100%">
+            </div>
+
+            <div>
+                <img src="images/netflix.jpg" alt="netflix" idth="100%">
+            </div>
+
+            <div>
+                <img src="images/zoom.jpg" alt="zoom" idth="100%">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
