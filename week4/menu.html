@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1 Responsive Menu</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .header {
+            width: 100%;
+            max-width: 2304px;
+            margin: auto;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 190px;
+        }
+
+        .top {
+            display: flex;
+            gap: 40px;
+        }
+
+        .topfont {
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .topfontservices {
+            color: #ff6b35;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .phone img {
+            width: 20px;
+        }
+
+        .contact {
+            background: #ff6b35;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+
+        /* 1280 version*/
+
+        @media screen and (max-width:1280px) {
+
+            .top {
+                display: none;
+            }
+
+            .contact {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+                width: 25px;
+            }
+
+            .logo img {
+                width: 180px;
+            }
+
+            .phone img {
+                width: 18px;
+            }
+
+        }
+
+
+        /*700 version */
+
+        @media screen and (max-width:700px) {
+
+
+            .phone {
+                display: none;
+            }
+
+            .logo img {
+                width: 150px;
+
+            }
+
+            .hamburger {
+                width: 24px;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="logo">
+            <img src="images/elementra.webp" alt="elementra" width="100%">
+        </div>
+
+        <div class="top">
+            <div class="topfont">Home</div>
+            <div class="topfontservices">Services</div>
+            <div class="topfont">Work</div>
+            <div class="topfont">Project Details</div>
+            <div class="topfont">Contact</div>
+        </div>
+
+        <div class="right">
+
+            <div class="phone">
+                <img src="images/call.png" alt="call" width="100%">
+                <div>555-123-4567</div>
+            </div>
+
+            <div>
+                <button class="contact">Contact</button>
+            </div>
+
+            <div class="hamburger">
+                <img src="images/hamburger.png" alt="hamburger" width="100%">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
