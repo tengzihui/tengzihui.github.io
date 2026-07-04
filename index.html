@@ -4,27 +4,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>PersonalPage</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&family=Syne+Mono&family=Yuyu&display=swap');
+
+        .all {
+            margin: 0 40px;
+        }
+
+        body {
+            margin: 0;
+            background-image: url(images/background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+
+        .links a,
+        .contentprofile h2 {
+            font-family: "Yuyu", sans-serif;
+            font-style: normal;
+            color: #2417df;
+            font-size: 25px;
+        }
+
+        p {
+            font-family: "Yuyu", sans-serif;
+            font-style: normal;
+            color: #176da2;
+            font-size: 25px;
+
+        }
+
+        h1 {
+            font-family: "Concert One", sans-serif;
+            font-style: normal;
+            color: #e3b983;
+        }
+
+        h2 {
+            font-family: "Yuyu", sans-serif;
+            font-style: normal;
+            color: #899be3;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #cb76de;
+        }
+
+        .header {
+            background-color: #9fc4e9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .logoimages {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contentprofile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 35px;
+        }
+
+        .contentprofile p {
+            text-align: center;
+            padding: 0 250px;
+        }
+
+        .contentprofile img {
+            border-radius: 50%
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .week2,
+        .week3,
+        .week4 {
+            width: 300px;
+            background-color: rgba(205, 199, 237, 0.7);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 0px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin: 10px;
+        }
+
+        .content {
+            border-bottom: 2px solid #9fc4e9;
+        }
+
+        .footer {
+            background-color: #9fc4e9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 10px;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 700px) {
+
+            .personalogo {
+                width: 40px;
+            }
+
+            .all {
+                margin: 0px 70px;
+            }
+
+            .box {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .week2,
+            .week3,
+            .week4 {
+                margin-bottom: 30px
+            }
+
+            .content {
+                justify-content: center
+            }
+
+            .contentprofile p {
+                padding: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    Teng Zi Hui dasien<br>
-    <button>instagram</button><br>
-    <button>tiktok</button>
-    <p>zihui</p>
-    <h1>webpublishing</h1>
-    <h2>webpublishing</h2>
-    <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
-    <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
+
+    <div class="header">
+
+        <div class="personalogo">
+            <div><img src="images/huihui.png" alt="huihui" width="60"></div>
+        </div>
+
+        <div class="logoimages">
+            <div> <a href="https://www.instagram.com/zihui_0746?igsh=eW5leTE1aHF5NWt0" target="_blank">
+                    <img src="images/instagram.png" width="35" alt="Instagram icon"></a></div>
+
+            <div> <a href="https://www.facebook.com/share/1EigQUi4kf/" target="_blank">
+                    <img src="images/facebook.png" width="35" alt="facebook icon"></a></div>
+
+            <div> <a href="https://xhslink.com/m/7cB8CqdXUJc" target="_blank">
+                    <img src="images/xiaohongshu.png" width="50" alt="xiaohongshu icon"></a></div>
+
+        </div>
+
+    </div>
+
+    <div class="all">
+
+        <div class="contentprofile">
+
+            <div><img src="images/zihui.jpeg" width="150" alt="zihui"></div>
+
+            <div>
+                <h1>TENG ZI HUI</h1>
+            </div>
+
+            <div>
+                <h2>Web Publishing</h2>
+            </div>
+
+            <div>
+                <p>My name is Teng Zi Hui. I am a university student majoring in Digital Media Design. I am passionate
+                    about creativity, design, and digital art, and I hope to express ideas through my work while
+                    continuously learning and growing.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="box">
+
+            <div class="week2">
+
+                <div class="content">
+                    <div><img src="images/file.png" alt="Exercise 1" width="25"></div>
+                    <div>
+                        <h2>Week 2</h2>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <div><a href="week2/button.html" target="_blank">Exercise 1</a></div>
+                    <div><a href="week2/self-intro.html" target="_blank">Exercise 2</a></div>
+                    <div><a href="week2/artist.html" target="_blank">Exercise 3</a></div>
+                </div>
+
+            </div>
+
+            <div class="week3">
+
+                <div class="content">
+                    <div><img src="images/file.png" alt="Exercise 1" width="20"></div>
+                    <div>
+                        <h2>Week 3</h2>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <div><a href="week3/flexbox1.html" target="_blank">Exercise 1</a></div>
+                    <div><a href="week3/flexbox2.html" target="_blank">Exercise 2</a></div>
+                </div>
+
+            </div>
+
+            <div class="week4">
+
+                <div class="content">
+                    <div><img src="images/file.png" alt="Exercise 1" width="20"></div>
+                    <div>
+                        <h2>Week 4</h2>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <div><a href="week4/menu.html" target="_blank">Exercise 1</a></div>
+                    <div><a href="week4/home.html" target="_blank">Exercise 2</a></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="logoimages">
+            <div> <a href="https://www.instagram.com/zihui_0746?igsh=eW5leTE1aHF5NWt0" target="_blank">
+                    <img src="images/instagram.png" width="35" alt="Instagram icon"></a></div>
+
+            <div> <a href="https://www.facebook.com/share/1EigQUi4kf/" target="_blank">
+                    <img src="images/facebook.png" width="35" alt="facebook icon"></a></div>
+
+            <div> <a href="https://xhslink.com/m/7cB8CqdXUJc" target="_blank">
+                    <img src="images/xiaohongshu.png" width="50" alt="xiaohongshu icon"></a></div>
+        </div>
+
+        <div class="disclaimer">
+            <p>This website is created for educational purposes only.</p>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
