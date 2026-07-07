@@ -1,5 +1,9 @@
      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&family=Syne+Mono&family=Yuyu&display=swap');
 
+     * {
+         box-sizing: border-box;
+     }
+
      .all {
          margin: 0 40px;
      }
@@ -78,19 +82,20 @@
 
      .box {
          display: flex;
-         justify-content: space-between;
+         flex-wrap: wrap;
          gap: 30px;
 
      }
 
 
      .week {
-         width: 33.33%;
+         width: 30%;
          background-color: rgba(205, 199, 237, 0.7);
          backdrop-filter: blur(8px);
          border-radius: 15px;
          padding: 20px;
-         margin-top: 0px;
+         min-height: 220px;
+
      }
 
      .content {
@@ -137,7 +142,7 @@
 
          .week {
              margin-bottom: 30px;
-             width: 88%;
+             width: 100%;
 
          }
 
