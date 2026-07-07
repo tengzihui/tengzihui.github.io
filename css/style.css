@@ -1,0 +1,151 @@
+     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&family=Syne+Mono&family=Yuyu&display=swap');
+
+     .all {
+         margin: 0 40px;
+     }
+
+     body {
+         margin: 0;
+         background-image: url(../images/background.jpg);
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+     }
+
+
+     .links a,
+     .contentprofile h2 {
+         font-family: "Yuyu", sans-serif;
+         font-style: normal;
+         color: #2417df;
+         font-size: 25px;
+     }
+
+     p {
+         font-family: "Yuyu", sans-serif;
+         font-style: normal;
+         color: #176da2;
+         font-size: 25px;
+
+     }
+
+     h1 {
+         font-family: "Concert One", sans-serif;
+         font-style: normal;
+         color: #e3b983;
+     }
+
+     h2 {
+         font-family: "Yuyu", sans-serif;
+         font-style: normal;
+         color: #899be3;
+     }
+
+     .links a {
+         text-decoration: none;
+         color: #cb76de;
+     }
+
+     .header {
+         background-color: #9fc4e9;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 10px;
+     }
+
+     .logoimages {
+         display: flex;
+         align-items: center;
+         gap: 20px;
+     }
+
+     .contentprofile {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin: 35px;
+     }
+
+     .contentprofile p {
+         text-align: center;
+         padding: 0 10px;
+     }
+
+     .contentprofile img {
+         border-radius: 50%
+     }
+
+     .box {
+         display: flex;
+         justify-content: space-between;
+         gap: 30px;
+
+     }
+
+
+     .week {
+         width: 33.33%;
+         background-color: rgba(205, 199, 237, 0.7);
+         backdrop-filter: blur(8px);
+         border-radius: 15px;
+         padding: 20px;
+         margin-top: 0px;
+     }
+
+     .content {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         gap: 20px;
+     }
+
+     .links {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 6px;
+         margin: 10px;
+     }
+
+     .content {
+         border-bottom: 2px solid #9fc4e9;
+     }
+
+     .footer {
+         background-color: #9fc4e9;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 20px 10px;
+         margin-top: 50px;
+     }
+
+     @media screen and (max-width: 700px) {
+
+         .personalogo {
+             width: 40px;
+         }
+
+         .all {
+             margin: 0px 70px;
+         }
+
+         .box {
+             flex-direction: column;
+         }
+
+         .week {
+             margin-bottom: 30px;
+             width: 88%;
+
+         }
+
+         .content {
+             justify-content: center
+         }
+
+         .contentprofile p {
+             padding: 0;
+         }
+     }
