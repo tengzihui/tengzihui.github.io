@@ -97,8 +97,8 @@
   }
 
   .services {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-wrap: wrap;
       gap: 35px;
       margin-top: 40px;
   }
@@ -112,6 +112,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: calc(50% - 17.5px);
+      box-sizing: border-box;
   }
 
   .service-card h3 {
@@ -249,7 +251,7 @@
       font-size: 20px;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1440px) {
       .container {
           padding: 30px 40px;
       }
@@ -371,9 +373,9 @@
       }
 
       .service-card {
-          min-height: 240px;
-          padding: 30px;
+          width: 100%;
       }
+
 
       .service-card h3 {
           font-size: 24px;
@@ -406,4 +408,5 @@
           width: 100%;
           justify-content: center;
       }
+
   }
