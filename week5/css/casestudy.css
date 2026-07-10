@@ -350,38 +350,52 @@
  @media screen and (max-width: 1440px) {
 
      .container {
-         width: 92%;
+         width: 95%;
+         margin-left: auto;
+         margin-right: auto;
+         padding-top: 30px;
+         padding-bottom: 50px;
      }
 
+     .section-heading,
+     .working {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         gap: 30px;
+         margin-bottom: 50px;
+     }
+
+     .heading-title,
+     .our {
+         width: auto;
+         padding: 6px 12px;
+     }
+
+     .heading-title p,
      .our p {
-         font-size: 28px;
+         font-size: 30px;
+
      }
 
-     .case-description p,
-     .step p,
-     .process-description p {
-         font-size: 20px;
+     .heading-description,
+     .step {
+         width: 45%;
      }
 
-     .process-number p {
-         font-size: 38px;
+     .heading-description p,
+     .step p {
+         font-size: 16px;
+         line-height: 1.5;
      }
 
-     .process-name p {
-         font-size: 18px;
-     }
-
-     .team-card {
-         min-height: 240px;
-     }
-
-     .member-name p {
-         font-size: 15px;
-     }
-
-     .member-position p,
-     .member-description p {
-         font-size: 12px;
+     .case-box {
+         width: 100%;
+         display: flex;
+         padding: 70px 65px;
+         background-color: #191a23;
+         border-radius: 30px;
+         gap: 60px;
      }
 
  }
@@ -390,6 +404,8 @@
 
      .container {
          width: 100%;
+         margin-left: auto;
+         margin-right: auto;
      }
 
 
