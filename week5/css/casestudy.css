@@ -350,14 +350,14 @@
  @media screen and (max-width: 1440px) {
 
      .container {
-         width: 95%;
+         width: 100%;
          margin-left: auto;
          margin-right: auto;
-         padding-top: 30px;
+         padding-top: 20px;
          padding-bottom: 50px;
      }
 
-     .section-heading,
+
      .working {
          width: 100%;
          display: flex;
@@ -366,24 +366,24 @@
          margin-bottom: 50px;
      }
 
-     .heading-title,
+
      .our {
          width: auto;
          padding: 6px 12px;
      }
 
-     .heading-title p,
+
      .our p {
          font-size: 30px;
 
      }
 
-     .heading-description,
+
      .step {
          width: 45%;
      }
 
-     .heading-description p,
+
      .step p {
          font-size: 16px;
          line-height: 1.5;
@@ -392,10 +392,161 @@
      .case-box {
          width: 100%;
          display: flex;
-         padding: 70px 65px;
-         background-color: #191a23;
+         padding: 55px 35px;
          border-radius: 30px;
-         gap: 60px;
+     }
+
+     .case-item {
+         width: 33.333%;
+         padding-left: 30px;
+         padding-right: 30px;
+     }
+
+     .case-description {
+         width: 100%;
+         min-height: 260px;
+     }
+
+     .case-description p {
+         width: 100%;
+         font-size: 16px;
+         line-height: 1.5;
+     }
+
+
+     .learn-more {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         gap: 12px;
+     }
+
+
+     .learn-text {
+         width: auto;
+     }
+
+
+     .learn-text p {
+         font-size: 17px;
+     }
+
+
+     .learn-icon {
+         width: 12%;
+     }
+
+
+     .list,
+     .process {
+         width: 100%;
+         margin-bottom: 20px;
+         padding-left: 35px;
+         padding-right: 35px;
+     }
+
+
+     .process-header {
+         width: 100%;
+         min-height: 90px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+
+     .process-number {
+         width: 10%;
+     }
+
+     .process-number p {
+         font-size: 38px;
+     }
+
+     .process-name {
+         width: 80%;
+     }
+
+
+     .process-name p {
+         font-size: 18px;
+     }
+
+
+     .process-icon {
+         width: 5%;
+         margin-left: auto;
+     }
+
+     .process-description {
+         width: 100%;
+         padding-top: 25px;
+         padding-bottom: 30px;
+     }
+
+     .team-list {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         gap: 30px;
+     }
+
+     .team-card {
+         width: 48%;
+         min-height: 340px;
+         margin-bottom: 0px;
+         padding: 25px;
+         border-radius: 25px;
+     }
+
+     .member-top {
+         width: 100%;
+         padding-bottom: 25px;
+     }
+
+     .member-photo {
+         width: 30%;
+     }
+
+     .member-info {
+         width: 55%;
+         padding-left: 20px;
+     }
+
+
+     .ingreen-icon {
+         width: 9%;
+         margin-left: auto;
+     }
+
+     .member-name p {
+         font-size: 19px;
+     }
+
+     .member-position p {
+         font-size: 15px;
+         line-height: 1.4;
+     }
+
+
+     .member-description {
+         width: 100%;
+
+         padding-top: 30px;
+     }
+
+     .member-description p {
+         font-size: 15px;
+         line-height: 1.5;
+     }
+
+     .team-button-box {
+         width: 100%;
+         margin-top: 30px;
+     }
+
+     .team-button {
+         width: 25%;
+         padding: 18px;
      }
 
  }
@@ -404,8 +555,8 @@
 
      .container {
          width: 100%;
-         margin-left: auto;
-         margin-right: auto;
+         padding-top: 20px;
+
      }
 
 
@@ -413,6 +564,7 @@
      .working-process,
      .team {
          margin-bottom: 30px;
+         width: 100%;
      }
 
      .section-heading,
@@ -442,15 +594,14 @@
 
      .case-box {
          flex-direction: column;
-         padding: 50px;
+         padding: 30px;
      }
 
      .case-item {
          width: 100%;
          padding-top: 20px;
          padding-bottom: 20px;
-         padding-left: 0;
-         padding-right: 0;
+         padding: 30px 0;
      }
 
      .case-item+.case-item {
@@ -465,6 +616,8 @@
 
      .case-description p {
          font-size: 13px;
+         line-height: 1.5;
+
      }
 
      .learn-icon {
