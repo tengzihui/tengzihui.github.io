@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <style>
+        div.relative {
+            position: relative;
+            width: 30%;
+            height: 200px;
+            border: 3px solid green;
+            margin: auto
+        }
+
+        div.box1 {
+            position: absolute;
+            top: 20px;
+            right: -80px;
+            width: 120px;
+            border: 3px solid red;
+        }
+
+        div.box2 {
+            position: absolute;
+            top: 150px;
+            left: -80px;
+            width: 120px;
+            border: 3px solid red;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .submenu {
+            opacity: 0;
+            /* make submenu not visible */
+            position: absolute;
+            pointer-events: none;
+            /* make the submenu not hoverable or clickable */
+            transition: all 0.5s;
+            /* transition effect */
+        }
+
+        .submenu a {
+            display: block;
+            /* make second link to next line */
+            padding: 5px;
+        }
+
+        .has-submenu>a::after {
+            content: "⇂";
+            margin-left: 2px;
+        }
+
+        .has-submenu:hover>.submenu {
+            opacity: 1;
+            /* visible when hover menu item */
+            pointer-events: auto;
+            /* make the submenu hoverable/clickable again */
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="relative">
+        <div class="box1">frist box</div>
+        <div class="box2">second box</div>
+    </div>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <div class="has-submenu">
+            <a href="#">About</a>
+            <div class="submenu">
+
+                <a href="#">Our Mission</a>
+                <a href="#">Our CEO</a>
+            </div>
+        </div>
+        <div class="has-submenu">
+            <a href="#">Services</a>
+            <div class="submenu">
+                <a href="#">Web Development</a>
+                <a href="#">App Development</a>
+            </div>
+        </div>
+        <a href="#">Contact</a>
+    </div>
+
+</body>
+
+</html>
